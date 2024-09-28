@@ -3,7 +3,7 @@
 Paper title: **DiDOTS: Knowledge Distillation from Large-Language-Models for
 Dementia Obfuscation in Transcribed Speech**
 
-Artifacts HotCRP Id: **#21** (not your paper Id, but the artifacts id)
+Artifacts HotCRP Id: **#21**
 
 Requested Badge: Either **Available**, **Functional**
 
