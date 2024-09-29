@@ -3,7 +3,7 @@
 ## **Introduction**
 This repository contains the code for the paper  **"DiDOTS: Knowledge Distillation from Large-Language-Models for Dementia Obfuscation in Transcribed Speech"** accepted at PETS 25'. 
 
-In this paper, we investigate LLMs for the task of dementia obfuscation in text and prosode a light weight obfuscator through knowledge distillation.
+In this paper, we investigate LLMs for the task of dementia obfuscation in text and propose a light weight obfuscator through knowledge distillation.
 
 **Authors:** Dominika Woszczyk and Soteris Demetriou
 
@@ -82,7 +82,7 @@ Some bash files are already prepared for
 
 ### **Evaluating Multiple Systems**
 
-If you have already trained models and want to evaluate multiple systems fill in the `SYSTEMS_PATHS` with an entry for each system. 
+If you have already trained models and want to evaluate multiple systems fill in the `SYSTEMS_PATHS` in `./scripts/main_eval.py` with an entry for each system. 
 
 For example:
 ```

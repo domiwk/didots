@@ -95,7 +95,7 @@ Some bash files are already prepared for
 
 ### **Evaluating Multiple Systems**
 
-If you have already trained models and want to evaluate multiple systems fill in the `SYSTEMS_PATHS` with an entry for each system. 
+If you have already trained models and want to evaluate multiple systems fill in the `SYSTEMS_PATHS` in `./scripts/main_eval.py` with an entry for each system. 
 
 For example:
 ```
