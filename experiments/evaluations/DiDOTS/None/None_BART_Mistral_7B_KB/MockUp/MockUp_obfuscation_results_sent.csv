@@ -1,0 +1,4 @@
+Model,Dataset,Obfuscation,Temperature,Level,SVM_sent,SVM_sent,BERT_sent,BERT_sent
+,,,,,Accuracy,F1-score,Accuracy,F1-score
+Original,MockUp,N,None,sent,0.5,0.6666666666666666,1.0,1.0
+DiDOTS_BART_None_Mistral_7B_KB,MockUp,Y,None,sent,0.7,0.8235294117647058,0.7,0.8235294117647058

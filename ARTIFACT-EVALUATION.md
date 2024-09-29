@@ -8,13 +8,13 @@ Artifacts HotCRP Id: **#21**
 Requested Badge: Either **Available**, **Functional**
 
 ## Description
-We release the code to train and evaluate our proposed system DiDOTS.
+We release the code to train and evaluate our proposed system DiDOTS. We also include code to generate synthetic datasets with LLM through different prompts.
 
 ### Security/Privacy Issues and Ethical Concerns (All badges)
 This code does not hold any risk for the privacy of the reviewer's machine. As we do not release the original dataset with dementia samples, we believe that there is no ethical concerns linked to this artifact.
 
 ## Basic Requirements (Only for Functional and Reproduced badges)
-Describe the minimal hardware and software requirements of your artifact and estimate the compute time and storage required to run the artifact.
+A laptop can run this code, although training and inference 
 
 ### Hardware Requirements
 If your artifact requires specific hardware to be executed, mention that here.

@@ -1,0 +1,8 @@
+*.pt
+*.pkl
+*.pth
+runs/
+*.pyc
+*.safetensors
+*.model
+*.DS_Store

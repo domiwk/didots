@@ -1,0 +1,144 @@
+Text,Label,AdvText,doc_ID
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,We might want to delay our decision for a bit longer.,1
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but finding concentration is proving challenging at present.",0
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,"Last week, due to high stress levels, my productivity significantly decreased as a result.",1
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,She suggested trying a different approach while we were discussing with her.,0
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1,"Source: So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I'm less busy.
+Output: Let's discuss this further tomorrow when I have fewer obligations.",1
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0,I planned to take a break but ended up getting distracted by another task.,0
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1,"Input Sentence: Uh, you know, it's just, like, really hard to, um, figure out what exactly they want from us.  
+Output Sentence: It is difficult to understand their exact expectations of us.",1
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home early today without remembering to take my coffee with me.,0
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1,I suggest meeting with you later today if you have time available.,1
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I'm considering preparing even further for our upcoming presentation.,0
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,I'm considering postponing our decision for a short while to allow more time for thoughtful consideration.,1
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding concentration at present is challenging for me.",0
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",0,Last week I felt very stressed out and accomplished little work.,1
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1,I spoke with my friend who suggested we might consider another strategy.,0
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",0,"Source: So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I'm less busy. 
+Output: I suggest discussing this further tomorrow since my schedule will be clearer then.",1
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1,"Input: Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.  
+Output: Despite intending to take a break, I became distracted by another task.",0
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0,Output: It is difficult to determine their exact expectations from us.,1
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurriedly got out the door this morning and completely forgot to take my coffee with me.,0
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0,We can arrange to meet later today if you are available.,1
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,I am considering preparing further for our upcoming presentation to ensure its success.,0
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",0,Output: We could benefit from delaying our decision for now.,1
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding concentration at present is challenging.",0
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",0,"Last week, I felt extremely overwhelmed and as a result, accomplished very little work-related tasks.",1
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1,"Source: Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.
+Output: My friend suggested that we take another approach while we were talking.",0
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",0,I thought discussing it further would be beneficial tomorrow when my schedule is lighter.,1
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1,"I intended to take a break, but then became engrossed in another task.",0
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0,Output: It's challenging to understand their exact expectations from us.,1
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurriedly left home in the morning without realizing that I had forgotten my coffee.,0
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0,"Output: I propose that we meet later today, provided that you're available.",1
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,I realized that we need to better prepare for our upcoming presentation.,0
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",0,I'm considering postponing our decision for a bit longer to allow more time for thought.,1
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding focus at this moment is challenging.",0
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,Last week I felt overwhelmed with stress and accomplished little work.,1
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,I discussed with my friend the possibility of trying a new strategy for our current plan.,0
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1,"Source: So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I'm less busy.  
+Output: Let's discuss this further tomorrow when my schedule clears up.",1
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0,"I intended to take a break, but ended up getting distracted by another task.",0
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1,It is difficult to understand precisely what the company expects of its employees.,1
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home this morning without remembering to take my coffee with me.,0
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1,"Input Sentence: So, uh, I guess we could, you know, like, meet up later today, if, uh, you're free?
+Output Sentence: I propose that we should meet up later today if possible.",1
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I'm considering preparing further for our upcoming presentation.,0
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,"Input Sentence: Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.
+Output Sentence: I think we might benefit from waiting a bit longer before making a decision.",1
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but finding concentration at present is proving difficult for me.",0
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,Last week I felt extremely stressed which resulted in me accomplishing very little work.,1
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,Friend suggested trying a new strategy while discussing our current plan of action.,0
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1,"Source: So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I'm less busy. 
+Output: Perhaps we can discuss this further tomorrow when I have fewer commitments. 
+
+Now, for the second instruction with a much harder difficulty level and additional constraints.",1
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0,I intended to take a break but ended up getting distracted by something else.,0
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1,It's difficult to understand exactly what the other party wants from us.,1
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home early today but completely overlooked grabbing my coffee.,0
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1,"I believe it would be possible for us to meet later today, provided that you are available.",1
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I'm considering preparing further for the upcoming presentation to ensure its success.,0
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,I thought it might be best to postpdependent on making any decision until later.,1
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but finding concentration is proving difficult at present.",0
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,Last week I felt extremely stressed and managed to accomplish very little work due to it.,1
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1,I discussed with my friend the possibility of trying a new strategy for our situation.,0
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",0,"I propose discussing this further tomorrow when my schedule is clearer.
+
+Source: Due to unforeseen circumstances, the meeting scheduled for today has been postponed indefinitely until we receive more information.
+
+Output: The planned meeting for today will continue without a fixed date due to unexpected issues; it remains on hold pending further updates.",1
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1,I intended to take a break but got distracted by something else.,0
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0,It's difficult to understand precisely what the client expects from us.,1
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurriedly left home early today but accidentally forgot to take my coffee with me.,0
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0,Output: Could we possibly arrange to meet later today if you are available?,1
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,"Input Sentence: Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?  
+Output Sentence: I thought preparation could be better for our upcoming presentation.",0
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",0,I thought it might be best to delay our decision for a short while.,1
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding concentration at present is challenging.",0
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",0,"Last week, due to stress, I accomplished very little work.",1
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1,I discussed with my friend the possibility of trying a new strategy for our conversation.,0
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",0,I thought discussing it further would be beneficial to do so the following day when my schedule isn't as hectic.,1
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1,I intended to take a break but became absorbed by another activity.,0
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0,Output: It's challenging to determine their exact expectations from us.,1
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurried this morning and forgot to take my coffee with me when I left.,0
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0,I suggest that we meet up later today if you're available.,1
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,I am considering preparing further for our upcoming presentation.,0
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",0,I thought it might be best to delay our decision for a bit.,1
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding concentration at present is challenging for me.",0
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",0,"Last week, I felt overwhelmed with stress which resulted in minimal productivity.",1
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1,I discussed with my friend the possibility of trying a different approach.,0
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1,"Input Sentence: So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I'm less busy.  
+Output Sentence: Let's discuss this further tomorrow since I will be less occupied then.",1
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0,"Output: I intended to take a break, but I became distracted by another activity.",0
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1,Output: It is challenging to understand exactly what the organization wants from us.,1
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home in the morning without realizing that I hadn't grabbed my coffee.,0
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1,I think we can meet later today if you have the time.,1
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I thought we should start preparing more thoroughly for the upcoming presentation.,0
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,I am considering postponing our decision for a short period of time.,1
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but focusing is challenging for me at the moment.",1
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,"Input Sentence: Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?
+Output Sentence: Last week, I felt extremely stressed, which resulted in me achieving little.",0
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,My friend suggested trying a new strategy during our conversation.,1
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1,"Input Sentence: So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.  
+Output Sentence: Let's discuss this further tomorrow as my schedule becomes lighter.",0
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0,"I intended to take a break, but ended up getting distracted by another matter.",1
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1,Output: It's difficult to understand their exact expectations from us.,0
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home this morning and completely forgot to take my coffee with me.,1
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1,Output: Let'selves potentially meet later today if I am available.,0
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I am considering additional preparations to improve our presentation quality.,1
+"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,Output: We might want to delay our decision for a short while.,0
+"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but finding concentration is proving difficult at present.",1
+"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,Last week I felt extremely overwhelmed and accomplished little work as a result.,0
+"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,I spoke with my friend who suggested trying a new approach.,1
+"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1,I'd like to discuss this further tomorrow when my schedule is lighter.,0
+"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1,"I planned to take a break, but ended up getting distracted by something else.",1
+"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0,It's difficult to determine their exact expectations of us.,0
+"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurried this morning and completely forgot to take my coffee with me when leaving.,1
+"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0,"Input Sentence: So, uh, I guess we could, you know, like, meet up later today, if, uh, you're free?
+Output Sentence: I believe we can meet this afternoon, provided that you are available.
+
+---
+
+Now for a much harder instruction with added constraints. Here is the revised one in English only. This version asks to extract information from multiple hypothetical emails and then create an agenda based on it without losing any important details or changing their original meaning: 
+
+I want you to parse two separate email threads discussing different aspects of organizing a community charity event, identify the key points mentioned regarding location choices, date selection for both venues A & B (mentioned in emails), and preferences about volunteers. Then synthesize these details into an agenda-style output that includes: 1) Venue options with their respective pros and cons based on feedback from each email thread; 2) Proposed dates aligned to the availability mentioned within both threads, ensuring no conflicts as per the emails' timeline constraints. Do not include any subjective interpretations or personal opinions about which venue might be better suited for an event – keep this strictly factual based on information from the texts only. Strictly follow these steps:
+
+Step 1 - Extract relevant details regarding location choices and date preferences mentioned in emails discussing Venues A & B, as well as volunteer availability.
+Step 2 - Create a consolidated list of pros and cons for each venue based on feedback provided within the email threads without adding personal judgments or assumptions beyond what's stated explicitly. Ensure this information remains factual and unaltered from its original context in emails.
+Step 3 - Draft an event agenda combining location choices, proposed dates (without conflicts), volunteer preferences as inferred directly from the email content for each venue; ensure alignment with all details provided across both threads without introducing new information or opinions not present originally within them and maintaining clear distinction between discussions about Venues A & B.
+Step 4 - Review your drafted agenda to check that it includes only factual statements as per the emails, no subjective language has been added (such as terms implying better suitability of one venue over another), and all dates are consistent with availability mentioned within each thread; revise if necessary.
+Step 5 - Finalize your agenda ensuring clarity in presenting information regarding location choices, proposed dates for Venues A & B based on the emails' timelines without conflicts, volunteer preferences as gathered from both threads. Deliver this finalized version of an event agenda that captures all vital details mentioned across email communications with precision and accuracy following your strict instructions above—and remember to avoid unnecessary or disfluent language in creating it!
+Email Thread 1 (Discussing Venue A): Hi team, I checked out the community hall at venue A – think they can do a setup for our charity event next Saturday? It's pretty central but might get crowded. What are your thoughts on other options or dates that could work better given everyone’s schedule around 2 PM-5 PM availability?
+Email Thread 2 (Discussing Venue B): Hey all, the park at venue B is outdoors and has a beautiful view of our city's skyline. They can accommodate us on Sunday afternoon but have limited catering options which might need backup plans for refreshments since it’s in April when weather isn’t always predictable here!
+Email Thread 3 (Volunteer Availability): Can everyone please confirm if they are available next weekend? We're trying to finalize the volunteers by tomorrow. Thanks! Just a heads up, we need at least five people but prefer not more than ten for setup and coordination as per our initial discussion on manpower requirements last meeting.
+Your task: Construct an event agenda following these steps strictly without adding personal evaluations or assumptions beyond the emails' content that maintains clear distinction between discussions about Venue A & B, including pros and cons of each venue based solely on feedback from email threads 1-3 related to location choices, date selections for both venues in alignment with volunteer availability timelines without conflicts as mentioned within the emails themselves. Ensure no subjective language has been added regarding better suitability between Venue A & B and remove all disfluencies or unnecessary information not present originally from these threads – maintaining accuracy, clarity, cohesion across your agenda draft based on provided instructions exclusively!
+Input Email Threads: [Email contents as described above] Output Event Agenda: 1) Venue Options Analysis - Community Hall (Venue A): Pros include its central location and potential for a community-centric atmosphere. Cons note the possible issue with overcrowding, especially on weekends when local events are common.
+Pros of Park at Venue B: Beautiful city skyline view and outdoor setting conducive to mingling during sunny weather which could appeal in April given its tendency for unpredictable spring showers. Cons include limited catering options, suggesting the need for a backup plan should inclement weather arise or if additional refreshments are desired by attendees beyond what is provided locally available on Sundays afternoon-evening timeslots during weekends in April when park maintenance activities usually cease after 4 PM.
+2) Proposed Event Dates: Based upon the emails, two possible dates emerge for organizing our charity event – one option at Venue A next Saturday from around 2 PM to 5 PM and another Sunday afternoon date available at Venue B within park hours which align with local weather patterns in April.
+3) Volunteer Coordination: As per the email threads, volunteers are needed for setup and coordination efforts on either of these two proposed dates; a minimum quota is set between five to ten individuals based on last meeting's discussion regarding manpower requirements within similar timelines - confirmation by next weekend would solidify this arrangement.
+Finalized Event Agenda: Community Charity Event Planning – Venue Options, Proposed Dates and Volunteer Coordination 1) Selection of Venue for the event includes an option to choose between a central community hall (Venue A), which may face high attendance leading to overcrowding on weekends; or alternatively, a park at Venue B with panoramic city skyline views suitable primarily during sunnier spring afternoons in April – both venues are within reachable distance for most community members and accessible by common transport routes.
+2) Suggested dates of the event: The timeline has been narrowed down to two options - one at Venue A next Saturday from 2 PM to 5 PM, aligning with previously identified local availabilities; alternatively, a Sunday afternoon date within park hours is also available for venue B – both timeslots avoid known large community gatherings and are deemed suitable by volunteers’ confirmed availability.
+3) Volunteer recruitment: Aimed to finalize the list of at least five yet not more than ten dedicated individuals who can commit to either time slot, ensuring adequate manpower for event setup (preparation phase), execution and coordination – confirmations are requested by next weekend in order to proceed with logistics planning.",0
+"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,I am considering preparing further for our upcoming presentation.,1
