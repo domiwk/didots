@@ -50,7 +50,7 @@ To download and run models, open a terminal and run the following and replacing 
 OLLAMA_MODELS="PATH/to/download/dir" ollama run <model_name>
 ```
 
-Once the server is alive, you can run the inference code `/Users/domiceli/Documents/PhD/DiDOTS/LLM_inference/main.py`
+Once the server is alive, you can run the inference code `./LLM_inference/main.py`
 
 ## **Usage**
 
@@ -58,7 +58,7 @@ Once the server is alive, you can run the inference code `/Users/domiceli/Docume
 
 After installing ollama and starting the server, you can generate synthetic pairs using LLMs for your dataset. 
 
-For this, change the variables accordingly in the script `/Users/domiceli/Documents/PhD/DiDOTS/LLM_inference/main.py` and run it with
+For this, change the variables accordingly in the script `./LLM_inference/main.py` and run it with
 
 ```
 python ./LLM_inference/main.py
@@ -94,7 +94,7 @@ SYSTEMS_PATHS = {
             'sampling_script':f"{PROJECT_DIR}/scripts",
             'ckt':'None',
             "model_ckp":f"{PROJECT_DIR}/experiments/DiDOTS/None/None_BART_MISTRAL_7B_KB/models/latest",
-            'obfuscator':"CTS/None_BART_MISTRAL_KB",
+            'obfuscator':"DiDOTS/None_BART_MISTRAL_KB",
             'compute_const': False,
             "level":'sent',
             "by_document":False,
@@ -104,7 +104,7 @@ SYSTEMS_PATHS = {
 
 and run 
 ```
-python /Users/domiceli/Documents/PhD/DiDOTS/scripts/main_eval.py
+python ./scripts/main_eval.py
 ```
 
 ### **Ablation Studies and Results from the Paper**

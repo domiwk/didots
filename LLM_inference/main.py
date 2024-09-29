@@ -11,7 +11,8 @@ if __name__ == '__main__':
 
     model_names = ['phi3:instruct']
     datasets = ['MockUp']
-    settings =['KB','ZS','FS']
+    #settings =['KB','ZS','FS']
+    settings =['KB']
     data_set = ['test','train']
 
     results_dir = {'phi3:instruct':"./experiments/Phi3/results",

@@ -14,85 +14,132 @@ We release the code to train and evaluate our proposed system DiDOTS. We also in
 This code does not hold any risk for the privacy of the reviewer's machine. As we do not release the original dataset with dementia samples, we believe that there is no ethical concerns linked to this artifact.
 
 ## Basic Requirements (Only for Functional and Reproduced badges)
-A laptop can run this code, although training and inference 
-
-### Hardware Requirements
-If your artifact requires specific hardware to be executed, mention that here.
-Provide instructions on how a reviewer can gain access to that hardware through remote access, buying or renting, or even emulating the hardware.
-Make sure to preserve the anonymity of the reviewer at any time.
+A laptop with 8gb RAM can run this code, although training and inference can be slow on cpu only. A GPU is preferred (cuda or mps).
 
 ### Software Requirements
-Describe the OS and software packages required to evaluate your artifact.
-This description is essential if you rely on proprietary software or software that might not be easily accessible for other reasons.
-Describe how the reviewer can obtain and install all third-party software, data sets, and models.
+This code should run on any OS with python 3.9, altough it was only tested on Linux and MacOS. For environments and packages see below or README.md
 
 ### Estimated Time and Storage Consumption
-Provide an estimated value for the time the evaluation will take and the space on the disk it will consume. 
-This helps reviewers to schedule the evaluation in their time plan and to see if everything is running as intended.
-More specifically, a reviewer, who knows that the evaluation might take 10 hours, does not expect an error if, after 1 hour, the computer is still calculating things.
+**LLM Inference**
+Storage need for LLM inference: Phi3 and Gemma 2 need ~2GB of memory each, LLama3 and Mistral take up ~4-5GB each.
+Inference can takes from 30 min per dataset and prompt to several hours (especially in few-shot setting). We suggest to only generate data with one LLM to check that the code is running and use either 'ZS' or "KB" setting to gain time.
+We provide some mockup data for training DiDOTS. 
+
+**DiDOTS**
+Time to run training a BART model should be around 10min on gpu and take roughly 500mb of space. T5 models takes ~800mb.
+Training static adversaries should be ~15min.
+The whole evaluation of one system should be take about 30-60min for inference, adaptive adversaries training and evaluation.
 
 ## Environment 
-In the following, describe how to access our artifact and all related and necessary data and software components.
-Afterward, describe how to set up everything and how to verify that everything is set up correctly.
-
 ### Accessibility (All badges)
-Describe how to access your artifact via persistent sources.
-Valid hosting options are institutional and third-party digital repositories.
-Do not use personal web pages.
-For repositories that evolve over time (e.g., Git Repositories ), specify a specific commit-id or tag to be evaluated.
-In case your repository changes during the evaluation to address the reviewer's feedback, please provide an updated link (or commit-id / tag) in a comment.
+The code is accessible at https://github.com/domiwk/didots with latest commit.
 
 ### Set up the environment (Only for Functional and Reproduced badges)
-Describe how the reviewers should set up the environment for your artifact, including downloading and installing dependencies and the installation of the artifact itself.
-Be as specific as possible here.
-If possible, use code segments to simply the workflow, e.g.,
+#### **DiDOTS Dependencies**
 
-```bash
-git clone git@my_awesome_artifact.com/repo
-apt install libxxx xxx
+
+**This project was built using python 3.9**
+
+To create a new environment for training and evaluating DiDOTS run
+
 ```
-Describe the expected results where it makes sense to do so.
+git clone https://github.com/domiwk/didots.git
+cd didots
+
+conda create --name didots python=3.9
+conda activate didots
+pip install -r requirements.txt
+```
+
+To simply install dependencies, use the following command:
+
+```
+git clone https://github.com/domiwk/didots.git
+
+cd didots
+pip install -r requirements.txt
+```
+
+#### **LLMs Inference Dependencies**
+To run **LLMs inference (Mistral, LLama3, etc... )** you will need to install **ollama** from [here](https://ollama.com).
+
+Then install the python package
+```
+pip install ollama
+```
+
+To download and run models, open a terminal and run the following and replacing `model_name` with a LLM from their repository. In this work we used `mistral:instruct`,`llama3:instruct`,`phi3:instruct` and `gemma:2b-instruct`. 
+
+```
+OLLAMA_MODELS="PATH/to/download/dir" ollama run <model_name>
+```
+
+Once the server is alive, you can run the inference code `./LLM_inference/main.py`
 
 ### Testing the Environment (Only for Functional and Reproduced badges)
-Describe the basic functionality tests to check if the environment is set up correctly.
-These tests could be unit tests, training an ML model on very low training data, etc..
-If these tests succeed, all required software should be functioning correctly.
-Include the expected output for unambiguous outputs of tests.
-Use code segments to simplify the workflow, e.g.,
-```bash
-python envtest.py
+
+### **Training & Evaluation**
+
+You can train a model by running the recipes in the `recipes` folder.
+
+For example to run DiDOTS trained on synthetic datasets built with Mistral run `/recipes/distill_llm_BART_Mistral_7B.sh`
+
+You can change parameters inside the bash file to run different systems.
+
+Some bash files are already prepared for 
+
+- Training T5 instead of BART: `recipes/distill_llm_T5_Mistral_7B.sh`
+- Training on different synthetic dataset: 
+    - `recipes/distill_llm_BART_Phi3.sh`
+    - `recipes/distill_llm_BART_Llama3.sh`
+
+### **Evaluating Multiple Systems**
+
+If you have already trained models and want to evaluate multiple systems fill in the `SYSTEMS_PATHS` with an entry for each system. 
+
+For example:
+```
+SYSTEMS_PATHS = {
+            'DIDOTS_BART_MISTRAL_KB':{
+            'project_dir':f'{PROJECT_DIR}/experiments/DIDOTS/None_BART_MISTRAL_7B_KB/results',
+            'temperatures':['None'],
+            'target_dir':f'{PROJECT_DIR}/experiments/evaluations/DiDOTS/None/None_BART_MISTRAL_7B_KB',
+            'sampling_script':f"{PROJECT_DIR}/scripts",
+            'ckt':'None',
+            "model_ckp":f"{PROJECT_DIR}/experiments/DiDOTS/None/None_BART_MISTRAL_7B_KB/models/latest",
+            'obfuscator':"DiDOTS/None_BART_MISTRAL_KB",
+            'compute_const': False,
+            "level":'sent',
+            "by_document":False,
+        }
+}
+```
+
+and run 
+```
+python ./scripts/main_eval.py
 ```
 
 ## Artifact Evaluation (Only for Functional and Reproduced badges)
-This section includes all the steps required to evaluate your artifact's functionality and validate your paper's key results and claims.
-Therefore, highlight your paper's main results and claims in the first subsection. And describe the experiments that support your claims in the subsection after that.
 
-### Experiments 
-List each experiment the reviewer has to execute. Describe:
- - How to execute it in detailed steps.
- - What the expected result is.
- - How long it takes and how much space it consumes on disk. (approximately)
- - Which claim and results does it support, and how.
+### **Ablation Studies and Results from the Paper**
 
-#### Experiment 1: Name
-Provide a short explanation of the experiment and expected results.
-Describe thoroughly the steps to perform the experiment and to collect and organize the results as expected from your paper.
-Use code segments to support the reviewers, e.g.,
-```bash
-python experiment_1.py
-```
-#### Experiment 2: Name
-...
+Run the following recipes
 
-#### Experiment 3: Name 
-...
+**DiDOTS experiments for tables 1,4, and ablations on tables 6 and 7**:
+- Different prompt settings and PEFT methods: `/recipes/distill_llm_BART_Mistral_7B.sh`
+- Training T5 instead of BART: `recipes/distill_llm_T5_Mistral_7B.sh`
+- Training on different synthetic dataset: 
+    - `recipes/distill_llm_BART_Phi3.sh`
+    - `recipes/distill_llm_BART_Llama3.sh`
+
+**LLMs experiments for tables 1,3 and 4**: See recipe `recipes/eval_llms.sh`
+
 
 ## Limitations (Only for Functional and Reproduced badges)
-Describe which tables and results are included or are not reproducible with the provided artifact.
-Provide an argument why this is not included/possible.
+We do not provide the datasets are they required a license and contain sensitive information. Hence, the results of our papaer are not directly reproductible. We also do not provide weights for trained models as it might leak information about the source data it was trained on.
 
 ## Notes on Reusability (Only for Functional and Reproduced badges)
-First, this section might not apply to your artifacts.
-Use it to share information on how your artifact can be used beyond your research paper, e.g., as a general framework.
-The overall goal of artifact evaluation is not only to reproduce and verify your research but also to help other researchers to re-use and improve on your artifacts.
-Please describe how your artifacts can be adapted to other settings, e.g., more input dimensions, other datasets, and other behavior, through replacing individual modules and functionality or running more iterations of a specific part.
+This code can be adapted to create various synthetic text datasets and to train smaller efficient models for tasks such as disfluency correction, style transfer, translation, etc...
+
+The LLMs, dataset and pretrained-language models used can be interchanged with other models. 
