@@ -5,7 +5,7 @@ Dementia Obfuscation in Transcribed Speech**
 
 Artifacts HotCRP Id: **#21**
 
-Requested Badge: Either **Available**, **Functional**
+Requested Badge: Either **Available**
 
 ## Description
 We release the code to train and evaluate our proposed system DiDOTS. We also include code to generate synthetic datasets with LLM through different prompts.
