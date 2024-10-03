@@ -5,7 +5,7 @@ Dementia Obfuscation in Transcribed Speech**
 
 Artifacts HotCRP Id: **#21**
 
-Requested Badge:**Available**
+Requested Badge:**Available, Functional**
 
 ## Description
 We release the code to train and evaluate our proposed system DiDOTS. We also include code to generate synthetic datasets with LLM through different prompts.
@@ -14,7 +14,7 @@ We release the code to train and evaluate our proposed system DiDOTS. We also in
 This code does not hold any risk for the privacy of the reviewer's machine. As we do not release the original dataset with dementia samples, we believe that there is no ethical concerns linked to this artifact.
 
 ## Basic Requirements (Only for Functional and Reproduced badges)
-A laptop with 8gb RAM can run this code, although training and inference can be slow on cpu only. A GPU is preferred (cuda or mps).
+A laptop with 8GB RAM can run this code, although training and inference can be slow on cpu only. A GPU is preferred (cuda or mps).
 
 ### Software Requirements
 This code should run on any OS with python 3.9, altough it was only tested on Linux and MacOS. For environments and packages see below or README.md
