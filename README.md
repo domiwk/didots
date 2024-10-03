@@ -24,7 +24,8 @@ To create a new environment for training and evaluating DiDOTS run
 git clone https://github.com/domiwk/didots.git
 cd didots
 
-conda create --name didots --file requirements.txt python=3.9
+conda create --name didots python=3.9
+python -m pip install -r requirements.txt
 ```
 
 To simply install dependencies, use the following command:
@@ -37,7 +38,7 @@ pip install -r requirements.txt
 ```
 
 ### **LLMs Inference Dependencies**
-To run **LLMs inference (Mistral, LLama3, etc... )** you will need to install **ollama** from [here](https://ollama.com).
+To run **LLMs inference (Mistral, LLama3, etc... )** you need to install **ollama** from [here](https://ollama.com).
 
 Then install the python package
 ```
