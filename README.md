@@ -1,6 +1,10 @@
 # **DiDOTS: Knowledge Distillation from Large-Language-Models for Dementia Obfuscation in Transcribed Speech**
-
 ## **Introduction**
+
+<p align="center">
+<img width="667" alt="image" src="https://github.com/user-attachments/assets/10e11a59-4faa-4afc-a707-221c9f18178d">
+</p>
+
 This repository contains the code for the paper  **"DiDOTS: Knowledge Distillation from Large-Language-Models for Dementia Obfuscation in Transcribed Speech"** accepted at PETS 25'. 
 
 In this paper, we investigate LLMs for the task of dementia obfuscation in text and propose a light weight obfuscator through knowledge distillation.
