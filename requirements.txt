@@ -3,7 +3,7 @@ torchaudio==2.2.0
 torchdiffeq==0.2.3
 torchext==0.0.6
 torchmetrics==0.11.4
-torchtext==0.14.1
+torchtext
 torchvision==0.17.0
 numpy==1.24.0
 pandas==1.5.2
