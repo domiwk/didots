@@ -84,16 +84,10 @@ def get_formality(samples,model,tokenizer):
     return batched
 
 def load_parabart_model(path_prefix):
-    if "rds" in path_prefix:
-        pp = "/rds/general/user/dcw19/home/Projects"
-    else:
-        pp = "/Users/domiceli/Documents/PhD/"
-
-    cache_path = f"{pp}/AdvStyle/Experiments/ParaBART/Models"
+    cache_path = f"./models/ParaBART"
     torch_device = 'cuda' if torch.cuda.is_available() else  'mps' if torch.backends.mps.is_available() else 'cpu'
     #torch_device = "mps"
-    model_path = f"{pp}/AdvStyle/Models/ParaBART/model.pt"
-
+    model_path = f"./models/ParaBART/model.pt"
 
     config = BartConfig.from_pretrained('facebook/bart-base', cache_dir=cache_path)
     model = ParaBart(config)
