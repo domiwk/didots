@@ -41,6 +41,10 @@ cd didots
 pip install -r requirements.txt
 ```
 
+For the evaluation, please download the model.pt file from [here](https://drive.google.com/file/d/1V5RnfPOSYumqPQElC80ZwKCWP4E_MpSm/view?usp=drive_link) and place it under "./models/ParaBART".
+
+
+
 ### **LLMs Inference Dependencies**
 To run **LLMs inference (Mistral, LLama3, etc... )** you need to install **ollama** from [here](https://ollama.com).
 
@@ -49,10 +53,10 @@ Then install the python package
 pip install ollama
 ```
 
-To download and run models, open a terminal and run the following and replacing `model_name` with a LLM from their repository. In this work we used `mistral:instruct`,`llama3:instruct`,`phi3:instruct` and `gemma:2b-instruct`. 
+To download and run models, open a terminal and run the following and replacing `model_name` with a LLM from their repository. In this work we used `mistral:instruct`,`llama3:instruct`,`phi3:instruct` and `gemma:2b-instruct`. Replace "path/to/download/dir" with the desired location for storing the downloaded model.
 
 ```
-OLLAMA_MODELS="PATH/to/download/dir" ollama run <model_name>
+OLLAMA_MODELS="path/to/download/dir" ollama run <model_name>
 ```
 
 Once the server is alive, you can run the inference code `./LLM_inference/main.py`
