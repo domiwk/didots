@@ -80,7 +80,7 @@ You can train a model by running the recipes in the `recipes` folder.
 
 For example to run DiDOTS trained on synthetic datasets built with Mistral run `/recipes/distill_llm_BART_Mistral_7B.sh`
 
-You can change parameters inside the bash file to run different systems.
+You can change parameters inside the bash file to run different systems. (e.g  set PATH_PREFIX to your working dir)
 
 Some bash files are already prepared for 
 
