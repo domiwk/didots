@@ -87,7 +87,7 @@ def paraphrase(data_df,model,column,tokenizer,temperature,temperatures,torch_dev
                 intent_columns = ['doc_ID','Label']
                 data_df =  data_df.groupby(intent_columns,as_index = False).agg({'Text':''.join})  
 
-            para_df = batch_sentence_paraphrase(df=data_df, model = model, column = column, tokenizer = tokenizer, torch_device = torch_device,t_sampling=t_sampling, batch_size = batch_size)
+            para_df = batch_sentence_paraphrase(df=data_df, model = model, tokenizer = tokenizer, torch_device = torch_device,t_sampling=t_sampling, batch_size = batch_size)
             data_df['AdvText'] = para_df['AdvText']
             temperature = temperature.replace('"','')
 
@@ -95,7 +95,7 @@ def paraphrase(data_df,model,column,tokenizer,temperature,temperatures,torch_dev
             data_df.to_csv(f"{save_dir}/{dataset_name}_{dataset_type}_obfuscated_{temperature}.csv",index=False)
     
         else:
-            para_df = batch_sentence_paraphrase(df=data_df, model = model, column = column, tokenizer = tokenizer, torch_device = torch_device,batch_size = batch_size, t_sampling=t_sampling)
+            para_df = batch_sentence_paraphrase(df=data_df, model = model, tokenizer = tokenizer, torch_device = torch_device,batch_size = batch_size, t_sampling=t_sampling)
 
             column = 'doc_ID'
             intent_columns = ['doc_ID','Label']
@@ -112,8 +112,8 @@ def paraphrase(data_df,model,column,tokenizer,temperature,temperatures,torch_dev
 
 if __name__ == "__main__":
     args = parser.parse_args()
-    pprint(vars(args))
-    print()
+    #pprint(vars(args))
+    #print()
 
     # fix random seed
     np.random.seed(args.seed)
@@ -141,6 +141,13 @@ if __name__ == "__main__":
 
         print(f"Loading model from {model_path}")
 
+        if args.base_model is None:
+            model = AutoModelForSeq2SeqLM.from_pretrained('facebook/bart-base')
+            tokenizer = AutoTokenizer.from_pretrained('facebook/bart-base')
+        else:
+            model = AutoModelForSeq2SeqLM.from_pretrained(args.base_model)
+            tokenizer = AutoTokenizer.from_pretrained(args.base_model)
+
         if 'LORA' in model_path or 'BOFT' in model_path or 'IA3' in model_path:
             if 'LORA' in model_path:
                 peft_config = LoraConfig(
@@ -160,13 +167,6 @@ if __name__ == "__main__":
                     peft_type="IA3",
                     task_type="SEQ_2_SEQ_LM",
                 )
-
-            if args.base_model is None:
-                model = AutoModelForSeq2SeqLM.from_pretrained('facebook/bart-base')
-                tokenizer = AutoTokenizer.from_pretrained('facebook/bart-base')
-            else:
-                model = AutoModelForSeq2SeqLM.from_pretrained(args.base_model)
-                tokenizer = AutoTokenizer.from_pretrained(args.base_model)
             
             model =  get_peft_model(model,peft_config)
 
@@ -204,6 +204,8 @@ if __name__ == "__main__":
     print(f'Torch device {torch_device}')
     print(f'Model name {model_name}')
     print(f'Document level? {by_documents}')
+
+    print(f'Saving to {save_dir}')
 
     if step =="paraphrase":
         paraphrase(data_df=data_df, model = model, column = column, tokenizer = tokenizer,temperature = temperature, torch_device = torch_device,temperatures=None, batch_size = args.batch_size,by_documents = by_documents)

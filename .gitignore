@@ -6,3 +6,6 @@ runs/
 *.safetensors
 *.model
 *.DS_Store
+*.lock
+models/ParaBART/models--facebook--bart-base/*
+experiments/classifiers/adaptive/*

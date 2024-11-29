@@ -14,7 +14,7 @@ In this paper, we investigate LLMs for the task of dementia obfuscation in text 
 ## **Dataset**
 This work was performed with the ADReSS and ADReSSo datasets that are available upon request at https://dementia.talkbank.org/.
 
-In this repository we will provide code to replicate the results but use a mock dataset instead.
+In this repository we provide code to replicate the results with a mock dataset.
 
 ## **Installation**
 ### **DiDOTS Dependencies**
@@ -42,7 +42,6 @@ pip install -r requirements.txt
 ```
 
 For the evaluation, please download the model.pt file from [here](https://drive.google.com/file/d/1V5RnfPOSYumqPQElC80ZwKCWP4E_MpSm/view?usp=drive_link) and place it under "./models/ParaBART".
-
 
 
 ### **LLMs Inference Dependencies**
@@ -113,7 +112,7 @@ SYSTEMS_PATHS = {
 
 and run 
 ```
-python ./scripts/main_eval.py
+python3.9 ./scripts/main_eval.py --os ${OS} --python_handle python3.9 --device ${DEVICE} --datasets MockUp --systems DIDOTS_BART_MISTRAL_KB  --static --sample --adaptive --eval_detection --eval_quality
 ```
 
 ### **Ablation Studies and Results from the Paper**

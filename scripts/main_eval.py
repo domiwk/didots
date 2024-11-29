@@ -18,7 +18,7 @@ def parse_args():
                         help="Path to the directory for processing scripts.")
     parser.add_argument('--path_prefix', type=str, default=".",
                         help="Global directory")
-    parser.add_argument('--project_dir', type=str, default="DiDOTS",
+    parser.add_argument('--project_dir', type=str, default=".",
                         help="Path to the directory for project")
     parser.add_argument('--python_handle', type=str, default="python",
                         help="python handle")
@@ -29,13 +29,12 @@ def parse_args():
     parser.add_argument('--datasets_paths', type=str, default=None,
                         help="Dict with source datasets and their paths")
 
-    parser.add_argument('--datasets', nargs='+', default=['ADReSSo'],
+    parser.add_argument('--datasets', nargs='+', default=['MockUp'],
                         help="List of datasets to use.")
     # Systems
     parser.add_argument('--system_paths', type=str, default=None,
                         help="Dict with systems paths and configs")
-    parser.add_argument('--systems', nargs='+',default=['ParChoice_Random','ParChoice_SVM','ParChoice_BERT',
-                                                        'Pegasus'],help="List of systems to use.")
+    parser.add_argument('--systems', nargs='+',default=['DiDOTS_BART_MISTRAL_KB'],help="List of systems to use.")
     # static classifiers
     parser.add_argument('--static', action='store_true', default=False,
                         help="Enable static parameter.")
@@ -43,7 +42,7 @@ def parse_args():
                         help="List of classifiers for static training.")
 
     # Sampling
-    parser.add_argument('--sample', action='store_true', default=False,
+    parser.add_argument('--sample', action='store_true', default=True,
                         help="Enable sampling from models.")
     # Adaptive Training
     parser.add_argument('--adaptive', action='store_true', default=False,
@@ -277,7 +276,7 @@ if __name__ == '__main__':
 
     # DATA
     DATASETS_PATHS = {
-            'MockUp':f"{PATH_PREFIX}/didots/datasets/MockUp",
+            'MockUp':f"{PATH_PREFIX}/datasets/MockUp",
         }
 
     if args.datasets_paths:
@@ -290,6 +289,25 @@ if __name__ == '__main__':
     # paths to different systems output folder and where to save evaluation results
     # temperature iterates over variation of output samples
     SYSTEMS_PATHS = {}
+
+    #Alternatively, fill in systems paths manually
+    """
+    SYSTEMS_PATHS = {
+            'DiDOTS_BART_MISTRAL_KB':{
+            'project_dir':f'{PROJECT_DIR}/experiments/DiDOTS/None/None_BART_MISTRAL_7B_KB/results',
+            'temperatures':['None'],
+            'target_dir':f'{PROJECT_DIR}/experiments/evaluations/DiDOTS/None/None_BART_MISTRAL_7B_KB',
+            'sampling_script':f"{PROJECT_DIR}/scripts",
+            'ckt':'None',
+            "model_ckp":f"{PROJECT_DIR}/experiments/DiDOTS/None/None_BART_MISTRAL_7B_KB/models/latest",
+            'obfuscator':"DiDOTS/None_BART_MISTRAL_KB",
+            'compute_const': False,
+            "level":'sent',
+            "by_document":False,
+            'base_model':'facebook/bart-base'
+        }
+    }
+    """
 
     if args.system_paths:
         print('Adding system paths')
