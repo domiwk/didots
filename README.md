@@ -95,8 +95,8 @@ If you have already trained models and want to evaluate multiple systems fill in
 For example:
 ```
 SYSTEMS_PATHS = {
-            'DIDOTS_BART_MISTRAL_KB':{
-            'project_dir':f'{PROJECT_DIR}/experiments/DIDOTS/None_BART_MISTRAL_7B_KB/results',
+            'DiDOTS_BART_MISTRAL_KB':{
+            'project_dir':f'{PROJECT_DIR}/experiments/DiDOTS/None/None_BART_MISTRAL_7B_KB/results',
             'temperatures':['None'],
             'target_dir':f'{PROJECT_DIR}/experiments/evaluations/DiDOTS/None/None_BART_MISTRAL_7B_KB',
             'sampling_script':f"{PROJECT_DIR}/scripts",
@@ -106,8 +106,9 @@ SYSTEMS_PATHS = {
             'compute_const': False,
             "level":'sent',
             "by_document":False,
+            'base_model':'facebook/bart-base'
         }
-}
+    }
 ```
 
 and run 
