@@ -125,11 +125,10 @@ def main(args):
       test_data = test_data.drop(columns = ["Text"])
       test_data = test_data.rename(columns ={"AdvText":"Text"})
 
-    print(f"Training {args.model} on {args.dataset_name} dataset.")
     idx2Label = {0:'cc', 1:'cd'}
     report, pred, real_trg = run_baseline(train_data,test_data, model_name=args.model, feature = args.feature,dataset=args.dataset_name, idx2Label= idx2Label, save_model_to=args.path_to_model_save, report = True)
 
-    print(f'{args.path_to_results_dir}/predictions.json')
+    #print(f'{args.path_to_results_dir}/predictions.json')
     save_as_json(pred, list(range(len(pred))), f'{args.path_to_results_dir}/predictions.json')
 
     columns = ['Model', "Features", "Accuracy","MCC","1-Recall","0-Recall","1-Precision","0-Precision","1-F1","0-F1"] 

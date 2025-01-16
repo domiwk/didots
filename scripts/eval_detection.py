@@ -4,7 +4,6 @@ import json
 import pickle
 import os
 from pathlib import Path
-import sys
 from tqdm import tqdm
 
 import torch
@@ -20,6 +19,9 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import accuracy_score,f1_score,recall_score,precision_score,roc_auc_score
 
 from torch.utils.data import DataLoader
+
+import nltk
+nltk.download('wordnet', quiet=True)
 
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
 tqdm.pandas()
@@ -139,7 +141,7 @@ def evaluate_detection(obf_model,obf_model_path,classifiers,dataset, all_results
     
     #all_results_csv_path = f'{all_results_csv_path}/{dataset}/{dataset}_detection_results.csv'
 
-    print(dataset)
+    print(f"Dataset name: {dataset}")
     if not os.path.isfile(all_results_csv_path):
         df_all_res = pd.DataFrame(columns=[('Model', ''),('Dataset', ''),('Obfuscation', ''),('Temperature', '')])
         df_all_res.columns = pd.MultiIndex.from_tuples([(x,'') if 'Unnamed' in y else (x,y) for x,y in df_all_res.columns ])

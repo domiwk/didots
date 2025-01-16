@@ -3,12 +3,13 @@ from tqdm import tqdm
 import math
 import numpy as np
 import pandas as pd
-import json
 from collections import defaultdict
 from typing import Any, List, Union
 import random
 
 import Levenshtein
+import nltk
+nltk.download('wordnet', quiet=True)
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 
@@ -197,7 +198,7 @@ def get_metric_scores(obf_samples, og_samples, metric , simi_model = None, token
         # load models
         sent_t_simi_model = SentenceTransformer('all-mpnet-base-v2')
         scores, mean, std = get_similarity_mean(og_texts,obf_texts,sent_t_simi_model)
-        print(f"Semantics score: {mean}")
+        #print(f"Semantics score: {mean}")
         return scores,mean,std
         #names.extend(['Similarity Mean',"Simialrity SD"])
         
@@ -223,7 +224,7 @@ def get_metric_scores(obf_samples, og_samples, metric , simi_model = None, token
             parabart_dist.append(cosine_scores_parabart[i][i].cpu())
 
         mean, std = np.mean(parabart_dist),np.std(parabart_dist)
-        print(f"ParaBart Semantics Doc score {mean}")
+        #print(f"ParaBart Semantics Doc score {mean}")
         #metrics_scores.extend([mean])
         return parabart_dist, mean,std
         #names.extend(['Similarity Mean',"Simialrity SD"])
@@ -278,13 +279,13 @@ def get_metric_scores(obf_samples, og_samples, metric , simi_model = None, token
         meteor_scores = [meteor.compute(predictions = [para], references = [og])['meteor'] for para,og in zip(texts_mt,texts_mt_og)]
         meteor_score = np.mean(meteor_scores)
 
-        print(f"METEOR: {meteor_score}")
+        #print(f"METEOR: {meteor_score}")
         return meteor_scores,meteor_score,0
 
     if metric == 'Perplexity':
         scorer = lmppl.LM('gpt2')
 
-        print("Computing perplexity")
+        #print("Computing perplexity")
 
         if sentence_const is None:
             #obf_texts_sent = [x.split(".") for x in obf_texts.to_list()]
@@ -301,7 +302,7 @@ def get_metric_scores(obf_samples, og_samples, metric , simi_model = None, token
             sentence_const_tmp  = sentence_const_tmp.groupby('ID').agg('mean')
             mean_perplexity_obf = np.mean(sentence_const_tmp['Perplexity_obf'].tolist())
 
-        print(f"Perplexity OBF: {mean_perplexity_obf}")
+        #print(f"Perplexity OBF: {mean_perplexity_obf}")
         return prlp, mean_perplexity_obf, np.std(np.array(prlp))
 
 def eval_quality(dataset_name,model_name,samples_path,results_csv_path, metrics, temperatures,path_prefix, level):

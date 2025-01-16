@@ -103,7 +103,8 @@ def train(train_data, model, tokenizer, seed = 42, epochs = 10, save_model_to = 
     report_to='none', # disable wandb
     eval_strategy = 'no',
     seed = int(seed)
-)
+    )
+
     trainer = Trainer(
         model = model,
         args=training_args,
@@ -126,7 +127,6 @@ def main(args):
     input = args.input
 
     config_name = 'config_1'
-    print(model_name)
 
     tokenizer = AutoTokenizer.from_pretrained(pretrained_dict[model_name], use_fast=True)
     special_tokens_dict = {'additional_special_tokens': ['...']}

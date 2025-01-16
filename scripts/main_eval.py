@@ -10,6 +10,9 @@ import numpy as np
 from eval_detection import evaluate_detection, update_results
 from eval_quality import eval_quality
 
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
+
 def parse_args():
     parser = argparse.ArgumentParser(description="Description of your script.")
     
@@ -42,7 +45,7 @@ def parse_args():
                         help="List of classifiers for static training.")
 
     # Sampling
-    parser.add_argument('--sample', action='store_true', default=True,
+    parser.add_argument('--sample', action='store_true', default=False,
                         help="Enable sampling from models.")
     # Adaptive Training
     parser.add_argument('--adaptive', action='store_true', default=False,
@@ -83,7 +86,6 @@ def train_classifier(model_name, script_name, scripts_dir, dataset_name, train_d
 
     if model_name == 'BERT':
         config_dir = f"{experiment_dir}/models/configs/config_1.json"
-        print('train BERT')
         os.system(
             f"{python_handle} {scripts_dir}/{script_name} --stage 'train' "
             f"--datapath {train_data_path} --test_set_path {test_data_path} "
@@ -107,8 +109,9 @@ def run_static_training():
     if not STATIC:
         return
     
+    print("################################################################################")
     print('Running static training.')
-    print("---------------------------")
+    print("################################################################################")
 
     task = 'Utility'
     scripts_dir = f"{PROJECT_DIR}/scripts"
@@ -132,6 +135,7 @@ def run_adaptive_training(args, system):
     if not args.adaptive:
         return
 
+    print()
     print('Running adaptive training.')
     print("---------------------------")
 
@@ -263,7 +267,7 @@ def process_constituency(dataset_type, temp, system_dir):
 if __name__ == '__main__':
     args = parse_args()
     OS = args.os
-    print(OS)
+    #print(OS)
     SEED = 666
     PROJECT_DIR= args.project_dir
     PATH_PREFIX = args.path_prefix
@@ -278,10 +282,12 @@ if __name__ == '__main__':
     DATASETS_PATHS = {
             'MockUp':f"{PATH_PREFIX}/datasets/MockUp",
         }
+    
+    #print(DATASETS_PATHS)
 
     if args.datasets_paths:
         print('Adding dataset paths')
-        print(args.datasets_paths)
+        #print(args.datasets_paths)
         sys_dict = json.loads(args.system_paths)
         SYSTEMS_PATHS = {**DATASETS_PATHS, **sys_dict}
         print()
@@ -334,8 +340,10 @@ if __name__ == '__main__':
     run_static_training()
 
     for system in SYSTEMS:
-        print(f'Evaluating {system}')
-        print("####################")
+        print("################################################################################")
+        print(f'Evaluating {system} for detection and quality metrics.')
+        print("################################################################################")
+        print()
 
         system_dir = SYSTEMS_PATHS[system]['project_dir']
         output_eval_dir = SYSTEMS_PATHS[system]['target_dir']
@@ -356,6 +364,8 @@ if __name__ == '__main__':
             # evaluate the samples synthesized by the systems against dementia classifiers.
             print('Evaluating Detection.')
             print("---------------------------")
+            print()
+            
 
             assert not (level=='doc' and ('BERT_sent' in CLASSIFIERS or 'SVM_sent' in CLASSIFIERS)), "Cannot evaluate on sentences with doc level"
 
@@ -374,7 +384,9 @@ if __name__ == '__main__':
 
         if EVALUATE_QUALITY:
             print('Evaluating Samples Quality')
-
+            print("---------------------------")
+            print()
+            
             for d in DATASETS:
 
                 pathlib.Path(f"{output_eval_dir}/{d}").mkdir( parents=True, exist_ok=True )
