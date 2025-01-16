@@ -6,7 +6,7 @@ if __name__ == '__main__':
 
     STEPS=['inference','cleaning']
 
-    llm_names = {'phi3:instruct':'Phi3','llama3:instruct':'LLama3_Instruct', 'gemma:2b-instruct':'Gemma_2B','mistral:instruct':'Mistral_7B'}
+    llm_names = {'phi3:instruct':'Phi3','llama3:instruct':'LLama3', 'gemma:2b-instruct':'Gemma_2B','mistral:instruct':'Mistral_7B'}
     datapaths = {'MockUp':"/Users/domiceli/Documents/PhD/DiDOTS/datasets/MockUp"}
 
     model_names = ['phi3:instruct']
