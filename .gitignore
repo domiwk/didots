@@ -9,3 +9,4 @@ runs/
 *.lock
 models/ParaBART/models--facebook--bart-base/*
 experiments/classifiers/adaptive/*
+experiments/classifiers/static/*
