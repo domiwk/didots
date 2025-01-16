@@ -21,10 +21,11 @@ parser.add_argument('--save_dir', type=str, default='./experiments/DiDOTS/None/N
 parser.add_argument('--model_name', type=str, default='bart-base', help='Model name')
 parser.add_argument('--model_type', type=str, default='BART', help='Model architecture type')
 parser.add_argument('--num_epochs', type=int, default=15, help='Number of epochs')
-parser.add_argument('--validate_every_n_steps', type=int, default=10, help='Validation frequency in steps')
+parser.add_argument('--validate_every_n_steps', type=int, default=40, help='Validation frequency in steps')
 parser.add_argument('--setting', type = str,default ='ZS', help='Enable training')
 parser.add_argument('--llm_base', type = str,default ='Mistral_7B', help='Enable training')
 parser.add_argument('--eval_steps', type = int,default =50, help='Evaluate every x steps')
+parser.add_argument('--device', type = str,default ='cpu', help='mps, cpu or cuda')
 
 # Early stopping parameters
 parser.add_argument('--early_stopping_patience', type=int, default=3, help='Early stopping patience')
@@ -55,6 +56,8 @@ train_path = args.train_dataset_path
 test_path = args.test_dataset_path
 val_path = args.val_dataset_path
 eval_steps = args.eval_steps
+#device = "cpu"
+device = args.device
 
 if 'rds' in path_prefix:
     data_path_prefix = '/rds/general/user/dcw19/home'
@@ -163,8 +166,6 @@ dataset_train = ParaphraseDataset(X_train, y_train, y_labels,tokenizer,sample_si
 dataset_val = ParaphraseDataset(X_val, y_val, val_labels,tokenizer,sample_size = 1)
 
 # Training loop with validation
-#device = "cpu"
-device = torch.device("cuda" if torch.cuda.is_available() else "mps")
 model.to(device)
 model.train()
 
