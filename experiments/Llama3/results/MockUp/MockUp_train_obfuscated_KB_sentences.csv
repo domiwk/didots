@@ -1,14 +1,14 @@
 Text,AdvText,Label,doc_ID
 I am feeling great today.,I feel awesome today.,0,0
-It is a beautiful day outside.,The weather is lovely today.,0,0
-He is a talented musician.,He is very skilled at playing music.,0,0
+It is a beautiful day outside.,"Yeah, the weather is lovely today.",0,0
+He is a talented musician.,"Yeah, he is very skilled at playing music.",0,0
 I have a lot of work to do.,I am busy with many tasks.,0,0
 She loves reading books.,She enjoys books a lot.,0,0
 The movie was fantastic.,The film was amazing.,0,0
 We are going to the beach tomorrow.,We will visit the beach tomorrow.,0,0
 I need to study for my exam.,I have to prepare for my test.,0,0
 I am looking forward to the weekend.,I can't wait for the weekend.,0,0
-He uh alwuh ays helps others.,He is uh alwuh ays there to uh assist people.,1,1
+He uh alwuh ays helps others.,"Yeah, he is uh alwuh ays there to uh assist people.",1,1
 The dinner was delicious.,The meal tasted great.,0,1
 I am feeling tired right now. uh,I uh am exhuh austed uh at the moment.,1,1
 She is very kind.,She has a kind heart.,0,1
@@ -17,7 +17,7 @@ I enjoy listening to music.,"I, I love hearing music.",1,2
 The cake was delicious.,The dessert wuh as very tuh asty.,1,2
 "I, I am trying to be more productive.",I-I am working on improving my productivity.,1,2
 The sky is clear today.,"Today, the sky is cloudless.",0,2
-I am excited about the upcoming event.,I am looking forward to the upcoming event.,0,2
+I am excited about the upcoming event.,"Yeah, i am looking forward to the upcoming event.",0,2
 They are very close friends.,They are best friends.,0,2
 I-I am proud of my achievements.,I feel accomplis uhhed about what I've done.,1,2
 We have to leave soon.,We need to head out shortly.,0,2
@@ -34,22 +34,22 @@ The restaurant was very nice.,The dining place was great.,0,3
 I need to get some rest. uh,"I, I have to sleep for a while.",1,3
 It was a long day.,Today felt really long.,0,3
 I am very hungry. uh,I feel starved.,1,3
-The presentation went well.,The talk was successful.,1,3
+The presentation went well.,"Yeah, the talk was successful.",1,3
 I like watching movies.,I enjoy seeing films.,0,3
 She has a beautiful smile.,Her smile is uh lovely.,1,4
 I am reading an interesting book.,I am currently reading a fascinating novel.,0,4
 He is a good listener.,He pays attention when others speak.,0,4
 We should tuh ake uh a breuh ak.,Let's pause for a while.,1,4
 My phone battery is uh dying.,My phone is uh almost out of chuh arge.,1,4
-"I, I want to travel the world.",I wish to see the world.,1,4
-She looks tired today.,She seems exhausted today.,0,4
+"I, I want to travel the world.","Yeah, i wish to see the world.",1,4
+She looks tired today.,"Yeah, she seems exhausted today.",0,4
 We need more time to finish the project.,We require extra time to complete the task.,0,4
 I don't like waking up early.,I dislike getting up early. uh,1,4
 He is very intelligent.,He is highly intelligent.,0,4
 She is wearing a beautiful dress.,Her dress is stunning.,0,4
-I feel very relaxed right now.,I am so calm at this moment.,0,4
+I feel very relaxed right now.,"Yeah, i am so calm at this moment.",0,4
 I prefer tea over coffee.,I like tea more than coffee.,0,4
-They are going on a vacation.,They are traveling for a holiday.,0,4
+They are going on a vacation.,"Yeah, they are traveling for a holiday.",0,4
 The meeting was productive.,The meeting was efficient.,0,5
 I love spending time with my family.,I enjoy being with my family.,0,5
 My computer is running slow.,My PC is quite sluggish.,0,5
@@ -58,49 +58,49 @@ She always speaks the truth.,She is always honest.,0,5
 I am looking for a new job.,I am searching for a new position.,0,5
 I-I am so grateful for your help.,I really appreciate your assistance.,1,5
 He is very good at chess.,He is an expert at chess.,0,5
-I am feeling a bit down.,I feel somewhat sad.,0,5
+I am feeling a bit down.,"Yeah, i feel somewhat sad.",0,5
 She enjoys watching TV shows.,She likes viewing television programs.,0,5
 I have to go to the doctor. uh,I need to visit the physician. uh,1,6
-I love spending time outdoors.,I enjoy being outside.,0,6
+I love spending time outdoors.,"Yeah, i enjoy being outside.",0,6
 We should go out for dinner.,Let's go out for a meal.,0,6
-He is very tall.,He is of great height.,0,6
+He is very tall.,"Yeah, he is of great height.",0,6
 I am learning to play the guitar.,I am practicing guitar.,0,6
 I need to clean my house.,My house needs cleaning.,0,6
 It is raining outside.,There is rain outside.,0,6
-She is a good dancer.,She dances well.,1,6
-"I, I am planning to go shopping.","I, I intend to go to the store.",1,6
+She is a good dancer.,"Yeah, she dances well.",1,6
+"I, I am planning to go shopping.","Yeah, i, i intend to go to the store.",1,6
 I love chocoluh ate.,"I, I really enjoy chocolate.",1,6
 He is a funny guy.,He has a great sense of humor.,0,6
 I am looking for a gift for my friend.,I need to find a present for my friend.,0,6
 She has long hair.,Her hair is lengthy.,0,6
-My favorite season is spring.,I love the spring season.,0,6
-I am feeling very energetic today.,I feel full of energy today.,0,6
+My favorite season is spring.,"Yeah, i love the spring season.",0,6
+I am feeling very energetic today.,"Yeah, i feel full of energy today.",0,6
 He plays the piano beautifully.,He is great at playing the piano.,1,6
-I need to finish my homework.,I have to complete my assignments.,0,6
+I need to finish my homework.,I got to complete my assignments.,0,6
 She is always so positive.,She is full of optimism.,0,7
 I am not feeling well today.,I am feeling sick today.,0,7
 They live in a big house.,They reside in a large home.,0,7
-I enjoy spending time at the park.,I like hanging out at the park.,0,7
+I enjoy spending time at the park.,"Yeah, i like hanging out at the park.",0,7
 I need to go grocery shopping.,I have to buy groceries.,0,7
-It is really windy outside.,The wind is strong outside.,0,7
+It is really windy outside.,"Yeah, the wind is strong outside.",0,7
 I am very proud of my team.,I feel honored by my team's achievements.,0,7
 She is a very hard worker.,She works extremely hard.,0,7
 I need to buy a new phone.,I have to get a new phone.,0,7
 He is a very creative person.,He is full of creativity.,0,7
 The cake looks amazing.,The cake appears delicious.,0,7
-I need to finish this task.,I have to complete this job.,0,7
+I need to finish this task.,"Yeah, i have to complete this job.",0,7
 She is very talented.,She is highly skilled.,0,7
 I am so happy to see you.,It makes me happy to see you.,0,7
 He is always busy.,He is constantly occupied.,0,7
 The book was really interesting.,The novel was captivating. uh,1,7
-I like playing video games.,I enjoy playing games on my console.,0,8
+I like playing video games.,"Yeah, i enjoy playing games on my console.",0,8
 She loves animals.,She has a deep affection for animals.,0,8
 I am feeling very relaxed today.,I feel calm today.,0,8
 We need to hurry up.,We need to speed up.,0,8
 I have a headache.,My head hurts.,0,8
 She is very organized.,She keeps everything in order.,0,8
 I am trying to eat healthier.,I am working on eating better.,0,8
-It is a little bit chilly outside.,The weather is a bit cold.,0,8
+It is a little bit chilly outside.,"Yeah, the weather is a bit cold.",0,8
 I love learning new things.,"I, I enjoy acquiring new knowledge.",1,8
 She is always so thoughtful.,She is incredibly considerate.,0,8
 We need to get some fresh air.,Let's go outside for a breath of fresh air.,0,8
@@ -112,11 +112,11 @@ I have a lot of things to do today.,I have many tasks to finish today.,0,8
 The cake is almost ready.,The cake is nearly done.,0,8
 I feel so blessed.,I feel incredibly fortunate.,0,8
 She is a great leader.,She is an excellent leader.,0,8
-I am learning a new language.,I am studying a foreign language.,0,8
+I am learning a new language.,"Yeah, i am studying a foreign language.",0,8
 The view from here is breathtaking.,The sight from here is incredible.,0,8
 I need to take a nap.,I have to rest for a bit.,0,8
 He is very friendly. uh,He is uh kind and approachable.,1,8
-I love hiking in the mountains.,I enjoy trekking in the mountuh ains.,1,9
+I love hiking in the mountains.,"Yeah, i enjoy trekking in the mountuh ains.",1,9
 The coffee is too hot.,The coffee is scalding.,0,9
 She has a wonderful sense of style.,Her fashion sense is fantastic.,0,9
 I am looking for a new book to read.,I need to find a new novel.,0,9
@@ -126,17 +126,17 @@ It is so peaceful here.,The place is very tranquil.,0,9
 I am very thirsty.,I need a drink.,0,9
 The flowers are blooming.,The flowers are in full bloom.,0,9
 He is a very good teacher. uh,He is an excellent educator. uh,1,9
-I need to find a new place to live.,I have to search for a new home.,0,9
+I need to find a new place to live.,I got to search for a new home.,0,9
 She is very intelligent.,She is highly smart.,0,9
 I am working on a new project.,I am developing a new project.,0,9
 We are having a party this weekend.,There will be a party this weekend.,0,9
 I am so tired.,I am exhausted.,0,9
-The food was amazing.,The meal was exceptional.,0,9
+The food was amazing.,"Yeah, the meal was exceptional.",0,9
 I love uh animuh als.,I huh ave uh a deep uh affection for uh animuh als.,1,9
 She is very athletic.,She is uh extremely fit.,1,9
 I need to go to the bank.,I have to visit the bank.,0,9
 He has a great sense of humor.,He is very funny.,0,10
-I am trying to save money.,I am working on saving up.,0,10
+I am trying to save money.,"Yeah, i am working on saving up.",0,10
 The meeting was very informative.,The discussion was very educational.,0,10
 I like taking photographs.,I enjoy capturing pictures.,0,10
 We should plan a trip.,Let's organize a vacation.,0,10

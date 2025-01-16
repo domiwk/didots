@@ -1,4 +1,0 @@
-Model,Dataset,Obfuscation,Level,Temperature,ADA_SVM_sent,ADA_SVM_sent
-,,,,,Accuracy,F1-score
-DiDOTS_BART_None_Mistral_7B_KB,MockUp,Y,sent,None,1.0,1.0
-Mistral_7B,MockUp,Y,sent,KB,1.0,1.0

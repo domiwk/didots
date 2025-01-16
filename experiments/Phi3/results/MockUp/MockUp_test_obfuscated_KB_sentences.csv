@@ -1,101 +1,51 @@
-Text,Label,AdvText,doc_ID
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,We might want to delay our decision for a bit longer.,1
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but finding concentration is proving challenging at present.",0
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,"Last week, due to high stress levels, my productivity significantly decreased as a result.",1
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,She suggested trying a different approach while we were discussing with her.,0
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1, Let's discuss this further tomorrow when I have fewer obligations,1
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0,I planned to take a break but ended up getting distracted by another task.,0
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1,"Input Sentence: Uh, you know, it's just, like, really hard to, um, figure out what exactly they want from us. ",1
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home early today without remembering to take my coffee with me.,0
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1,I suggest meeting with you later today if you have time available.,1
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I'm considering preparing even further for our upcoming presentation.,0
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,I'm considering postponing our decision for a short while to allow more time for thoughtful consideration.,1
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding concentration at present is challenging for me.",0
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",0,Last week I felt very stressed out and accomplished little work.,1
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1,I spoke with my friend who suggested we might consider another strategy.,0
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",0, I suggest discussing this further tomorrow since my schedule will be clearer then,1
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1," Despite intending to take a break, I became distracted by another task",0
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0, It is difficult to determine their exact expectations from us,1
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurriedly got out the door this morning and completely forgot to take my coffee with me.,0
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0,We can arrange to meet later today if you are available.,1
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,I am considering preparing further for our upcoming presentation to ensure its success.,0
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",0, We could benefit from delaying our decision for now,1
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding concentration at present is challenging.",0
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",0,"Last week, I felt extremely overwhelmed and as a result, accomplished very little work-related tasks.",1
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1, My friend suggested that we take another approach while we were talking,0
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",0,I thought discussing it further would be beneficial tomorrow when my schedule is lighter.,1
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1,"I intended to take a break, but then became engrossed in another task.",0
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0, It's challenging to understand their exact expectations from us,1
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurriedly left home in the morning without realizing that I had forgotten my coffee.,0
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0," I propose that we meet later today, provided that you're available",1
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,I realized that we need to better prepare for our upcoming presentation.,0
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",0,I'm considering postponing our decision for a bit longer to allow more time for thought.,1
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding focus at this moment is challenging.",0
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,Last week I felt overwhelmed with stress and accomplished little work.,1
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,I discussed with my friend the possibility of trying a new strategy for our current plan.,0
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1, Let's discuss this further tomorrow when my schedule clears up,1
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0,"I intended to take a break, but ended up getting distracted by another task.",0
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1,It is difficult to understand precisely what the company expects of its employees.,1
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home this morning without remembering to take my coffee with me.,0
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1,"Input Sentence: So, uh, I guess we could, you know, like, meet up later today, if, uh, you're free?Output Sentence: I propose that we should meet up later today if possible.",1
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I'm considering preparing further for our upcoming presentation.,0
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,"Input Sentence: Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.Output Sentence: I think we might benefit from waiting a bit longer before making a decision.",1
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but finding concentration at present is proving difficult for me.",0
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,Last week I felt extremely stressed which resulted in me accomplishing very little work.,1
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,Friend suggested trying a new strategy while discussing our current plan of action.,0
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1, Perhaps we can discuss this further tomorrow when I have fewer commitments,1
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0,I intended to take a break but ended up getting distracted by something else.,0
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1,It's difficult to understand exactly what the other party wants from us.,1
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home early today but completely overlooked grabbing my coffee.,0
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1,"I believe it would be possible for us to meet later today, provided that you are available.",1
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I'm considering preparing further for the upcoming presentation to ensure its success.,0
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,I thought it might be best to postpdependent on making any decision until later.,1
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but finding concentration is proving difficult at present.",0
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,Last week I felt extremely stressed and managed to accomplish very little work due to it.,1
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1,I discussed with my friend the possibility of trying a new strategy for our situation.,0
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",0, The planned meeting for today will continue without a fixed date due to unexpected issues,1
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1,I intended to take a break but got distracted by something else.,0
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0,It's difficult to understand precisely what the client expects from us.,1
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurriedly left home early today but accidentally forgot to take my coffee with me.,0
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0, Could we possibly arrange to meet later today if you are available?,1
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,"Input Sentence: Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know? ",0
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",0,I thought it might be best to delay our decision for a short while.,1
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding concentration at present is challenging.",0
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",0,"Last week, due to stress, I accomplished very little work.",1
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1,I discussed with my friend the possibility of trying a new strategy for our conversation.,0
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",0,I thought discussing it further would be beneficial to do so the following day when my schedule isn't as hectic.,1
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1,I intended to take a break but became absorbed by another activity.,0
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0, It's challenging to determine their exact expectations from us,1
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurried this morning and forgot to take my coffee with me when I left.,0
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0,I suggest that we meet up later today if you're available.,1
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,I am considering preparing further for our upcoming presentation.,0
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",0,I thought it might be best to delay our decision for a bit.,1
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",1,"I attempted to complete the project, but finding concentration at present is challenging for me.",0
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",0,"Last week, I felt overwhelmed with stress which resulted in minimal productivity.",1
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",1,I discussed with my friend the possibility of trying a different approach.,0
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1,"Input Sentence: So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I'm less busy. ",1
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0," I intended to take a break, but I became distracted by another activity",0
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1, It is challenging to understand exactly what the organization wants from us,1
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home in the morning without realizing that I hadn't grabbed my coffee.,0
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1,I think we can meet later today if you have the time.,1
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I thought we should start preparing more thoroughly for the upcoming presentation.,0
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1,I am considering postponing our decision for a short period of time.,1
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but focusing is challenging for me at the moment.",1
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,"Input Sentence: Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?Output Sentence: Last week, I felt extremely stressed, which resulted in me achieving little.",0
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,My friend suggested trying a new strategy during our conversation.,1
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1,"Input Sentence: So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy. ",0
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",0,"I intended to take a break, but ended up getting distracted by another matter.",1
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",1, It's difficult to understand their exact expectations from us,0
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",0,I hurriedly left home this morning and completely forgot to take my coffee with me.,1
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",1, Let'selves potentially meet later today if I am available,0
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",0,I am considering additional preparations to improve our presentation quality.,1
-"Uh, you know, I was thinking that maybe, um, we should just, like, wait a little longer before deciding.",1, We might want to delay our decision for a short while,0
-"So, yeah, I was trying to, um, finish this project, but, like, it’s kinda hard to focus right now.",0,"I attempted to complete the project, but finding concentration is proving difficult at present.",1
-"Uh, last week I was, like, really stressed out, and, um, I didn’t really get much done, you know?",1,Last week I felt extremely overwhelmed and accomplished little work as a result.,0
-"Uh, I was, like, talking to my friend, and, um, she said that, like, maybe we should, uh, try a different approach.",0,I spoke with my friend who suggested trying a new approach.,1
-"So, um, you know, I was thinking that maybe we could, like, talk more about it tomorrow, uh, when I’m less busy.",1,I'd like to discuss this further tomorrow when my schedule is lighter.,0
-"Uh, I was going to, you know, take a break, but then, um, I got, like, distracted with something else.",1,"I planned to take a break, but ended up getting distracted by something else.",1
-"Uh, you know, it’s just, like, really hard to, um, figure out what exactly they want from us.",0,It's difficult to determine their exact expectations of us.,0
-"Uh, I was, like, in a rush this morning, and, um, I totally forgot to, like, grab my coffee before I left.",1,I hurried this morning and completely forgot to take my coffee with me when leaving.,1
-"So, uh, I guess we could, you know, like, meet up later today, if, uh, you’re free?",0,"Input Sentence: So, uh, I guess we could, you know, like, meet up later today, if, uh, you're free?Output Sentence: I believe we can meet this afternoon, provided that you are available.---Now for a much harder instruction with added constraints. ",0
-"Uh, I was, like, thinking about how, um, we should probably, uh, prepare more for the presentation, you know?",1,I am considering preparing further for our upcoming presentation.,1
+Text,AdvText,Label,doc_ID
+"I, I explored a new city during my break.",I had the chance to explore a new city.,1,4
+I spent time with friends at a holiday cabin.,I hung out with friends in a cabin during the holiday.,0,4
+I went to a tropical beach resort.,I resided at a tropical beach resort.,0,4
+I spent a week relaxing in a luxury hotel.,I had a week-long stay at a luxury hotel.,0,4
+I went to a festival with a group of friends.,"I, I had a blast at a festival with friends.",0,4
+I went kayaking on the lake. uh,I tried kayaking on the lake during my holiday.,1,4
+I spent a few days in a small town.,I had a relaxing stay in a quiet little town. uh,0,5
+I went to a beautiful national park.,I visited a breathtaking national park.,0,5
+We went on a cycling tour of the city.,We took a cycling tour around the city.,1,5
+The weather was perfect for a holiday.,The weather was just right for a vacation.,1,5
+I spent my holiday in a cozy mountain lodge.,I stayed at a cozy lodge in the mountains.,0,5
+I enjoyed a relaxing holiday in the countryside.,My vacation was calm and peaceful in the countryside. uh,0,5
+I went to the beach and swam in the ocean.,I spent time at the beach swimming in the ocean.,0,5
+I spent a few days in a beach house.,"I, I rented a beach house for a few days.",0,5
+I took a short vacation to visit family.,I went on a quick holiday to visit my relatives.,0,5
+I enjoyed a quiet holiday in a small village.,I had a peaceful break in a tiny village.,0,5
+I spent a few days at a remote mountain retreat.,"Indeed, I stayed at a secluded mountain retreat for a few days.",0,5
+I spent a week exploring the countryside.,I took a week to explore the countryside.,0,5
+I spent my holiday at a quiet lakeside cabin.,I stayed in a peaceful lakeside cabin.,0,5
+I went on a hiking trip with my friends.,I went on a hiking adventure with friends.,0,5
+I took a break and went to a spa for a few days.,I relaxed at a spa for a couple of days.,1,5
+I went on a boat trip during my vacation.,I spent part of my holiday on a boat. uh,1,5
+I went on a holiday tour around the city.,I did uh a city tour during my holiduh ay.,1,5
+I spent my holidays at a luxury resort. uh,I had a fantastic time at a luxury resort.,1,5
+"I, I went to a nearby beach town.","Indeed, I spent my holiday in a beach town nearby.",1,5
+I explored the locuh al muh arkets during my vuh acuh ation.,I visited the local markets on my holiday.,1,6
+I had a relaxing holiday by the pool.,I spent my vuh acuh ation reluh axing by the pool.,1,6
+I spent a lot of time exploring museums.,I visited a lot of museums during my holiday.,1,6
+I spent my vacation visiting historic landmarks.,I toured historic sites during my holiday.,0,6
+I went on a solo trip to a remote destination.,I traveled alone to a quiet destination.,0,6
+I took uh a week off to enjoy the holiduh ays.,I took some time off to enjoy my vacation.,1,6
+I went camping with my friends.,"Indeed, I spent time camping with friends during my break.",0,6
+I took a road trip to the coast.,I went on a coast road trip during my holiday.,0,6
+I went to uh a tropicuh al isluh and with cleuh ar wuh aters.,I spent my vacation on a tropical island.,1,6
+I went horseback riding during my holiday.,I tried horseback riding on my break.,0,6
+I spent a week in a beautiful coastal town.,I stayed in a charming coastal town for a week.,0,6
+I explored the nightlife of the city.,I checked out the nightlife in the city. uh,0,6
+I spent my holiday in a sunny destination. uh,I visited a sunny place for my holiday.,1,7
+I had a fun time with my friends on holiday.,"Indeed, I enjoyed spending time with friends on vacation. uh",0,7
+I went on a scenic drive through the countryside.,"Indeed, I took a scenic route through the countryside.",0,7
+I went to a yoga retreat during my break.,I spent my holiday at a yoga retreat.,0,7
+I went to a quiet beach to relax.,"Indeed, I visited a peaceful beach during my vacation.",0,7
+I had a great time at a cultural festival. uh,I attended a cultural festival during my break.,1,7
+I spent a lot of time reading and relaxing.,My holiday was full of reading and relaxation.,0,7
+I had a great holiday with lots of activities.,My vacation was packed with fun activities.,0,7
+I went on a guided tour of the city.,I joined a city tour during my vacation.,0,7
+I went to a local farm during my trip.,I visited a farm during my holiday.,0,7
+I had a quiet holiday by the lake. uh,I enjoyed a relaxing time by the lake.,1,7
+I went on a boat tour around the islands.,I took a boat tour around the islands. uh,0,7
+I spent a lot of time exploring new cities.,I visited several new cities during my holiday.,0,7
