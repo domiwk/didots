@@ -7,7 +7,7 @@ scripts_dir="${PROJECT_DIR}/scripts"
 SEED=666
 
 #LLM_BASES=( Mistral_7B LLama3 Phi3 Gemma2B )
-LLM_BASES=( Phi3 )
+LLM_BASES=( Mistral_7B )
 BASE_MODEL='None'
 #SETTINGS= '["FS" "ZS" "KB"]'
 SETTINGS='["KB"]'

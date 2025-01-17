@@ -61,8 +61,8 @@ for SETTING in ${SETTINGS[@]}; do
         #SAMPLE=''
 
         #whether to train static classifier or not
-        #STATIC='--static'
-        STATIC=''
+        STATIC='--static'
+        #STATIC=''
 
         STATIC_CLASSIFIERS="BERT_sent SVM_sent"
 
