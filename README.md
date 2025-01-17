@@ -29,6 +29,7 @@ git clone https://github.com/domiwk/didots.git
 cd didots
 
 conda create --name didots python=3.9
+conda activate didots
 python -m pip install -r requirements.txt
 ```
 
@@ -81,7 +82,7 @@ For example to run DiDOTS trained on synthetic datasets built with Mistral run `
 
 You can change parameters inside the bash file to run different systems. Change the following variables for your use:
 
-- `PATH_PREFIX`: set to your working directory.
+- `PROJECT_DIR`: set to your working directory.
 - `python_handle`: set to the python handle which is either python or python3.
 - `DEVICE`: set to your prefered device type to run training and inference.
 - `TRAIN_DATASET`: name to the dataset used, necessary for the path. Change it if using another dataset and make sure the dataset is found at ./datasets/CUSTOM_DATASET. By default it's MockUp.
