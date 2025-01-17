@@ -41,7 +41,7 @@ def parse_args():
     # static classifiers
     parser.add_argument('--static', action='store_true', default=False,
                         help="Enable static parameter.")
-    parser.add_argument('--static_classifiers', nargs='+', default=['BERT','SVM'],
+    parser.add_argument('--static_classifiers', nargs='+', default=['BERT_sent','SVM_sent'],
                         help="List of classifiers for static training.")
 
     # Sampling
@@ -365,7 +365,6 @@ if __name__ == '__main__':
             print('Evaluating Detection.')
             print("---------------------------")
             print()
-            
 
             assert not (level=='doc' and ('BERT_sent' in CLASSIFIERS or 'SVM_sent' in CLASSIFIERS)), "Cannot evaluate on sentences with doc level"
 
