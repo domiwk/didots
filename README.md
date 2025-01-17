@@ -47,7 +47,7 @@ For the evaluation, please download the model.pt file from [here](https://drive.
 ### **LLMs Inference Dependencies**
 To run **LLMs inference (Mistral, LLama3, etc... )** you need to install **ollama** from [here](https://ollama.com).
 
-Then install the python package
+Then install the python package as such
 ```
 pip install ollama
 ```
@@ -79,20 +79,30 @@ You can train a model by running the recipes in the `recipes` folder.
 
 For example to run DiDOTS trained on synthetic datasets built with Mistral run `/recipes/distill_llm_BART_Mistral_7B.sh`
 
-You can change parameters inside the bash file to run different systems. (e.g  set PATH_PREFIX to your working dir)
+You can change parameters inside the bash file to run different systems. Change the following variables for your use:
+
+- `PATH_PREFIX`: set to your working directory.
+- `python_handle`: set to the python handle which is either python or python3.
+- `DEVICE`: set to your prefered device type to run training and inference.
+- `TRAIN_DATASET`: name to the dataset used, necessary for the path. Change it if using another dataset and make sure the dataset is found at ./datasets/CUSTOM_DATASET. By default it's MockUp.
+- `MODEL`: base model for didots. Use either BART or T5.
+- `LLM_BASE`: name of LLM that was used to created the synthetic dataset to train didots on.
+- `PEFT`: List of training setups to cycle through for training and evaluation.
+- `SETTINGS`: List of prompt settings to cycle through for training and evaluation.
 
 Some bash files are already prepared for 
 
 - Training T5 instead of BART: `recipes/distill_llm_T5_Mistral_7B.sh`
 - Training on different synthetic dataset: 
+    - `/recipes/distill_llm_BART_Mistral_7B.sh`
     - `recipes/distill_llm_BART_Phi3.sh`
     - `recipes/distill_llm_BART_Llama3.sh`
 
 ### **Evaluating Multiple Systems**
 
-If you have already trained models and want to evaluate multiple systems fill in the `SYSTEMS_PATHS` in `./scripts/main_eval.py` with an entry for each system. 
+If you have already trained models and want to evaluate multiple systems fill in the `SYSTEMS_PATHS` in `./scripts/main_eval.py` with an entry for each system.
 
-For example:
+For example for the system 'DiDOTS_BART_MISTRAL_KB':
 ```
 SYSTEMS_PATHS = {
             'DiDOTS_BART_MISTRAL_KB':{
@@ -111,9 +121,10 @@ SYSTEMS_PATHS = {
     }
 ```
 
-and run 
+and run (replace {DEVICE} with either cpu. mps or cuda).
+
 ```
-python3.9 ./scripts/main_eval.py --os ${OS} --python_handle python3.9 --device ${DEVICE} --datasets MockUp --systems DIDOTS_BART_MISTRAL_KB  --static --sample --adaptive --eval_detection --eval_quality
+python3.9 ./scripts/main_eval.py --os Local --python_handle python3.9 --device {DEVICE} --datasets MockUp --systems DiDOTS_BART_MISTRAL_KB --static --sample --adaptive --evaluate_detection --evaluate_quality
 ```
 
 ### **Ablation Studies and Results from the Paper**
